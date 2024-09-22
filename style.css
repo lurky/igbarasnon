@@ -1,0 +1,114 @@
+
+body {
+    font-family: 'Arial', sans-serif; 
+   background-image: url('C:/Users/MSI CYBORG 15/Desktop/INTRO TO COMP/69087703_2429832100568901_159749332889763840_n.jpg'); 
+    background-size: cover; 
+    background-position: center;     background-repeat: no-repeat; 
+    margin: 0; 
+    padding: 0;
+    height: 100vh; 
+}
+
+h1 {
+    background-color: #0077b6; 
+    color: white; 
+    padding: 20px 0; 
+    margin: 0; 
+    text-align: center; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    font-size: 40px; 
+}
+
+.flex-container {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: flex-start; */
+    flex-wrap: wrap; /
+    padding: 20px; 
+    height: calc(100vh - 70px); 
+}
+
+/* Individual member containers */
+.container {
+       margin: 10px; 
+    flex: 1 1 40%;
+    max-width: 1000px; 
+    max-length: 1000px;
+}
+.emoji {
+	font-size: 100px;
+}
+
+.custom-icon {
+	font-size: 50px;
+	margin-top: 40px;
+}
+
+.emoji {
+	font-size: 30px;
+}
+
+/* Styling each column */
+.column {
+    background-color: rgba(255, 255, 255, 0.8); 
+    text-align: center;
+    padding: 20px; 
+    border: 1px solid #ddd;
+    border-radius: 10px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+
+.column:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+
+.column img {
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%; 
+    border: 3px solid #0077b6; 
+    margin-bottom: 15px;
+}
+
+
+.column h2 {
+    color: #0077b6;
+    font-size: 30px;
+    margin-bottom: 10px; 
+}
+
+
+.column p {
+    color: #555; 
+    font-size: 20px; 
+    line-height: 1.6;
+    margin-bottom: 15px; 
+}
+
+
+.column ul {
+    list-style-type: none; 
+    padding-left: 0; 
+    color: #0077b6; 
+    font-size: 20px; 
+}
+
+
+.column ul li {
+    margin-bottom: 8px; 
+}
+
+    .container {
+        flex: 1 1 45%;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex: 1 1 100%; 
+    }
+}
